@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #008080;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #004d4d;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+nav a:hover {
+    background-color: #008080;
+    border-radius: 10px;
+    color: aquamarine;
+}
+.banner {
+    background-image: url(https://www.goesgo.com.mx/Portals/1173/Images/SELVA%20DE%20CHIAPAS/chiapas-selva-banner.jpg?ver=erLsi_wRZNSvXHnEStFyew%3D%3D&timestamp=1676923449672);
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+.content {
+    padding: 20px;
+}
+.section-title {
+    font-size: 24px;
+    color: #008080;
+    margin-bottom: 20px;
+}
+.services, .destinations {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.services div, .destinations div {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #004d4d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+input[type="submit"]:hover {
+    background-color: #006666;
+}
