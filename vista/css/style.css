@@ -1,32 +1,45 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
 header {
-    background-color: #008080;
+    background-color: #004d4d;
     color: white;
     padding: 10px 0;
     text-align: center;
+    font-size: 40px;
 }
+
+h1 {
+    position: absolute;
+    left: 610px;
+    font-size: 30px;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     background-color: #004d4d;
     padding: 10px;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     padding: 5px;
 }
+
 nav a:hover {
     background-color: #008080;
     border-radius: 10px;
     color: aquamarine;
 }
+
 .banner {
     background-image: url(https://www.goesgo.com.mx/Portals/1173/Images/SELVA%20DE%20CHIAPAS/chiapas-selva-banner.jpg?ver=erLsi_wRZNSvXHnEStFyew%3D%3D&timestamp=1676923449672);
     background-size: cover;
@@ -39,30 +52,43 @@ nav a:hover {
     font-size: 36px;
     font-weight: bold;
 }
+
 .content {
     padding: 20px;
 }
+
 .section-title {
     font-size: 24px;
     color: #008080;
     margin-bottom: 20px;
 }
+
 .services, .destinations {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
 }
+
 .services div, .destinations div {
     width: 30%;
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Añadido para esquinas redondeadas */
+    transition: transform 0.3s; /* Transición suave para el efecto de hover */
 }
+
+.services div:hover, .destinations div:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
 .contact-form {
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Añadido para esquinas redondeadas */
 }
+
 footer {
     background-color: #004d4d;
     color: white;
@@ -70,20 +96,56 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
 input, textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px; /* Aumentado para mejor legibilidad */
 }
+
 input[type="submit"] {
     background-color: #008080;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 18px;
+    border-radius: 5px; /* Añadido para esquinas redondeadas */
+    transition: background-color 0.3s; /* Transición suave */
 }
+
 input[type="submit"]:hover {
     background-color: #006666;
+}
+
+
+/* Estilos adicionales para el formulario de registro */
+form {
+    max-width: 500px; /* Máximo ancho del formulario */
+    margin: 20px auto; /* Centrado */
+}
+
+form label {
+    font-weight: bold; /* Resaltar etiquetas */
+}
+
+.Head{
+    background-color:#004d4d;
+    border-radius: 10px;
+    padding: 10px;
+    color: beige;
+    font-size: 20px;
+    border-color: beige;
+
+}
+.Head:hover{
+    background-color: beige;
+    color: #004d4d;
+    border-color: top #004d4d;
+}
+.dropdown a{
+    color: beige;
+
 }
